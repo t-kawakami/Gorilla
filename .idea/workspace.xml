@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b69e6761-2cc1-46f0-82f3-a0f5fdeb8ef3" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\AcroWorks\git-public\Gorilla\main\gorilla.go" afterPath="$PROJECT_DIR$/script/gorilla.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/gorilla.go" afterPath="$PROJECT_DIR$/script/gorilla.go" />
     </list>
     <ignored path="Gorilla.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +26,9 @@
       <file leaf-file-name="gorilla.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script/gorilla.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76046175">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#73#130#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.14141414">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -465,9 +462,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#73#130#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -475,19 +470,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#73#130#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/gorilla.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76046175">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#73#130#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.14141414">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
