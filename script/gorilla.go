@@ -2,9 +2,20 @@
 // Click here and start typing.
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "io/ioutil"
+    "os"
+    "bytes"
+)
 
 func main() {
+    gorilla()
+    write("gorilla")
+    read()
+}
+
+func gorilla() {
     fmt.Println("　　　　　　　　　,r\"´⌒｀ﾞ`ヽ")
     fmt.Println("　　　　　　　／　,　　　-‐- !､")
     fmt.Println("　　　 　　／　{,}f　　-‐- ,,,__､)")
@@ -14,4 +25,14 @@ func main() {
     fmt.Println("　　　　　　　　　 `}. （__,,ノヽ_ﾉ,ﾉ　 ＼")
     fmt.Println("　　　　　　　　　　 l　　 ｀-\" ,ﾉ　　　 ヽ")
     fmt.Println("　　　　　　　　　　 }　､､___,j''　　　　　 l\")")
+}
+
+func write(text string) {
+    content := []byte(text)
+    ioutil.WriteFile("data\\test.txt", content, os.ModePerm)
+}
+
+func read() {
+    fmt.Println(ioutil.ReadFile("data\\test.txt"))
+
 }
