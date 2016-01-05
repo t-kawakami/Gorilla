@@ -1,37 +1,49 @@
-// You can edit this code!
-// Click here and start typing.
 package main
 
 import (
     "fmt"
     "io/ioutil"
     "os"
+    "bufio"
 )
 
 func main() {
-    gorilla()
-    write("gorilla")
-    read()
+    fileName := "data\\gorilla.txt"
+    deleteFile(fileName)
+    gorilla(fileName)
+    readFile(fileName)
 }
 
-func gorilla() {
-    fmt.Println("　　　　　　　　　,r\"´⌒｀ﾞ`ヽ")
-    fmt.Println("　　　　　　　／　,　　　-‐- !､")
-    fmt.Println("　　　 　　／　{,}f　　-‐- ,,,__､)")
-    fmt.Println("　　　　／　　 /　　.r'~\"''‐--､)")
-    fmt.Println("　　,r''\"´⌒ヽ{　　 ヽ　(・)ﾊ(・)}､")
-    fmt.Println("　/　　　　　　＼　　（⊂｀-'つ）i-､")
-    fmt.Println("　　　　　　　　　 `}. （__,,ノヽ_ﾉ,ﾉ　 ＼")
-    fmt.Println("　　　　　　　　　　 l　　 ｀-\" ,ﾉ　　　 ヽ")
-    fmt.Println("　　　　　　　　　　 }　､､___,j''　　　　　 l\")")
+func gorilla(fileName string) {
+    writeFileAppend("　　　　　　　　　,r\"´⌒｀ﾞ`ヽ", fileName)
+    writeFileAppend("　　　　　　　／　,　　　-‐- !､", fileName)
+    writeFileAppend("　　　 　　／　{,}f　　-‐- ,,,__､)", fileName)
+    writeFileAppend("　　　　／　　 /　　.r'~\"''‐--､)", fileName)
+    writeFileAppend("　　,r''\"´⌒ヽ{　　 ヽ　(・)ﾊ(・)}､", fileName)
+    writeFileAppend("　/　　　　　　＼　　（⊂｀-'つ）i-､", fileName)
+    writeFileAppend("　　　　　　　　　 `}. （__,,ノヽ_ﾉ,ﾉ　 ＼", fileName)
+    writeFileAppend("　　　　　　　　　　 l　　 ｀-\" ,ﾉ　　　 ヽ", fileName)
+    writeFileAppend("　　　　　　　　　　 }　､､___,j''　　　　　 l\")", fileName)
 }
 
-func write(text string) {
-    content := []byte(text)
-    ioutil.WriteFile("data\\test.txt", content, os.ModePerm)
+func deleteFile(fileName string) {
+    os.Truncate(fileName, 0)
 }
 
-func read() {
-    fmt.Println(ioutil.ReadFile("data\\test.txt"))
+func writeFileAppend(text string, fileName string) {
+    writeFile, _ := os.OpenFile(fileName, os.O_APPEND|os.O_CREATE, os.ModePerm)
+
+    writer := bufio.NewWriter(writeFile)
+    writer.WriteString(text)
+    writer.WriteString("\r\n")
+    writer.Flush()
+}
+
+func readFile(fileName string) {
+    contents,err := ioutil.ReadFile(fileName)
+    if err != nil {
+        panic(err)
+    }
+    fmt.Println(string(contents))
 
 }
