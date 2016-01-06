@@ -1,30 +1,30 @@
 package main
 
 import (
+    "encoding/json"
     "fmt"
     "io/ioutil"
     "os"
     "bufio"
 )
 
+type Goritia struct {
+    Id string `json:"id"`
+    Turn int `json:"turn"`
+    Hand []int `json:"hand"`
+}
+
 func main() {
     fileName := "data\\gorilla.txt"
     deleteFile(fileName)
     gorilla(fileName)
     readFile(fileName)
+
+    gta := Goritia{Id:"test", Turn:1, Hand:[]int{1, 2, 3, 4, 5}}
+    json, _ := json.MarshalIndent(gta, "", "    ")
+    fmt.Println(string(json))
 }
 
-func gorilla(fileName string) {
-    writeFileAppend("　　　　　　　　　,r\"´⌒｀ﾞ`ヽ", fileName)
-    writeFileAppend("　　　　　　　／　,　　　-‐- !､", fileName)
-    writeFileAppend("　　　 　　／　{,}f　　-‐- ,,,__､)", fileName)
-    writeFileAppend("　　　　／　　 /　　.r'~\"''‐--､)", fileName)
-    writeFileAppend("　　,r''\"´⌒ヽ{　　 ヽ　(・)ﾊ(・)}､", fileName)
-    writeFileAppend("　/　　　　　　＼　　（⊂｀-'つ）i-､", fileName)
-    writeFileAppend("　　　　　　　　　 `}. （__,,ノヽ_ﾉ,ﾉ　 ＼", fileName)
-    writeFileAppend("　　　　　　　　　　 l　　 ｀-\" ,ﾉ　　　 ヽ", fileName)
-    writeFileAppend("　　　　　　　　　　 }　､､___,j''　　　　　 l\")", fileName)
-}
 
 func deleteFile(fileName string) {
     os.Truncate(fileName, 0)
@@ -45,5 +45,60 @@ func readFile(fileName string) {
         panic(err)
     }
     fmt.Println(string(contents))
+}
 
+func gorilla(fileName string) {
+    writeFileAppend("##################@#####################", fileName)
+    writeFileAppend("################@,######################", fileName)
+    writeFileAppend("##############@@'#######################", fileName)
+    writeFileAppend("############@@##########################", fileName)
+    writeFileAppend("###########;@###########################", fileName)
+    writeFileAppend("##########@@@;##########################", fileName)
+    writeFileAppend("##########.;.+##########################", fileName)
+    writeFileAppend("##########  +'##########################", fileName)
+    writeFileAppend("#########' ##:##########################", fileName)
+    writeFileAppend("#########    :##########################", fileName)
+    writeFileAppend("########@  '+,;#########################", fileName)
+    writeFileAppend("########`  `@:#@@@######################", fileName)
+    writeFileAppend("########`  ''      #####;    @##########", fileName)
+    writeFileAppend("########    @        :        ##########", fileName)
+    writeFileAppend("########   ,+                 ##########", fileName)
+    writeFileAppend("########  `#;       .         ;#########", fileName)
+    writeFileAppend("#######. .,#@ ;     . `     ` +#########", fileName)
+    writeFileAppend("#######  #+#@@###     ' `#####+#########", fileName)
+    writeFileAppend("######@  `+##'.#############@###########", fileName)
+    writeFileAppend("######`   ##@  ,.++ '.  ;:``+###########", fileName)
+    writeFileAppend("######   @####,. .  ,     ``############", fileName)
+    writeFileAppend("######  ,####@ ``     :     ,###########", fileName)
+    writeFileAppend("#####@  ,####  .    #'    @.`+##########", fileName)
+    writeFileAppend("#####:   #+##`  + @``  @ #    ##########", fileName)
+    writeFileAppend("#####.  ;#@#@ , +  @  @ @    `##########", fileName)
+    writeFileAppend("######   @##@ ` :   .`,      `@#########", fileName)
+    writeFileAppend("######,  @### ` `    `.      `@#########", fileName)
+    writeFileAppend("######+   ###+       `.    `` ##########", fileName)
+    writeFileAppend("#######   ###;  +    @ ,++'  @##########", fileName)
+    writeFileAppend("#######@  ':#    #@#+#@###+;#@##########", fileName)
+    writeFileAppend("######## ` ;## ++#########@#############", fileName)
+    writeFileAppend("########+   ##.#''#########'############", fileName)
+    writeFileAppend("#########   '@. ,.' ,.  :@#@############", fileName)
+    writeFileAppend("#########+   ;``., + . '@`:#@###########", fileName)
+    writeFileAppend("##########:#:` ,. .:`+..`;#:############", fileName)
+    writeFileAppend("############',  +, . , ,.###############", fileName)
+    writeFileAppend("############## ' '@: ` #################", fileName)
+    writeFileAppend("################+:#,####################", fileName)
+    writeFileAppend("#################`, ,'##################", fileName)
+    writeFileAppend("###################+`''#################", fileName)
+    writeFileAppend("#####################' #################", fileName)
+    writeFileAppend("#########,+;',##########################", fileName)
+    writeFileAppend("#########:+#',#'### ` ,` :##'########@,#", fileName)
+    writeFileAppend("#####+ .''` ' ;@::;@'''''###,',`  `,;'@#", fileName)
+    writeFileAppend("#####''' `   ',#,''.    .+##@'''''''''##", fileName)
+    writeFileAppend("##### '''''',' #''  ..,,. ,#@',  `''' ##", fileName)
+    writeFileAppend("#####@@#''+@''`+'' '''''''+@`##;##@'''##", fileName)
+    writeFileAppend("####### ''` ,:' '':''''''':''@# ''  :###", fileName)
+    writeFileAppend("####+;''''.####'',++.'' #::'' #,''+ +###", fileName)
+    writeFileAppend("####''''''@### '' ##:''+ '''@#@''.#@####", fileName)
+    writeFileAppend("###,''''''@##;'' ## '' ###''##.',@######", fileName)
+    writeFileAppend("##@@####@#:#,`.@##`'`'#######.`.########", fileName)
+    writeFileAppend("##################@#####################", fileName)
 }

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b69e6761-2cc1-46f0-82f3-a0f5fdeb8ef3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Gorilla.iml" afterPath="$PROJECT_DIR$/.idea/Gorilla.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/goLibraries.xml" afterPath="$PROJECT_DIR$/.idea/goLibraries.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/gorilla.go" afterPath="$PROJECT_DIR$/script/gorilla.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Gorilla.iws" />
@@ -30,26 +27,23 @@
       <file leaf-file-name="gorilla.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script/gorilla.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.030303031">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.1529582">
+              <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
               <folding>
-                <element signature="e#14#71#0" expanded="true" />
+                <element signature="e#14#91#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="types.go" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/os/types.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,6 +57,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main/gorilla.go" />
+        <option value="$PROJECT_DIR$/script/example.go" />
         <option value="$PROJECT_DIR$/script/gorilla.go" />
       </list>
     </option>
@@ -109,9 +104,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,6 +178,12 @@
       <module name="Gorilla" />
       <working_directory value="C:\AcroWorks\git-public\Gorilla" />
       <filePath value="$PROJECT_DIR$/script/gorilla.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run example.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="Gorilla" />
+      <working_directory value="C:\AcroWorks\git-public\Gorilla" />
+      <filePath value="$PROJECT_DIR$/script/example.go" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -400,16 +401,18 @@
       <envs />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Go Single File.go run helloworld.go" />
       <item index="1" class="java.lang.String" itemvalue="Go Single File.go run gorilla.go" />
       <item index="2" class="java.lang.String" itemvalue="Go Single File.go run gorilla.go (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run example.go" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Go Single File.go run gorilla.go (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run gorilla.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run helloworld.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run example.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run gorilla.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run helloworld.go" />
       </list>
     </recent_temporary>
   </component>
@@ -473,7 +476,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -484,9 +489,19 @@
     <entry file="file://$PROJECT_DIR$/script/gorilla.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/gorilla.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding>
-            <element signature="e#14#71#0" expanded="true" />
+            <element signature="e#14#91#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -496,7 +511,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#71#0" expanded="true" />
+            <element signature="e#14#91#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -506,14 +521,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#71#0" expanded="true" />
+            <element signature="e#14#91#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Go/src/os/types.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.48051947">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding />
         </state>
@@ -521,10 +536,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script/gorilla.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.030303031">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.1529582">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
           <folding>
-            <element signature="e#14#71#0" expanded="true" />
+            <element signature="e#14#91#0" expanded="true" />
           </folding>
         </state>
       </provider>
