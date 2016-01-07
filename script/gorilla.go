@@ -21,8 +21,16 @@ func main() {
     readFile(fileName)
 
     gta := Goritia{Id:"test", Turn:1, Hand:[]int{1, 2, 3, 4, 5}}
-    json, _ := json.MarshalIndent(gta, "", "    ")
-    fmt.Println(string(json))
+    jsonString, _ := json.MarshalIndent(gta, "", "    ")
+    fmt.Println(string(jsonString))
+
+    gta2 := json.Unmarshal([]byte(jsonString), Goritia{})
+//    var gta2p *Goritia = &gta2;
+//    gta2p.Id = "newTest"
+//    gta2p.Turn = 2
+//    gta2p.Hand[3] = 6
+    jsonString2, _ := json.MarshalIndent(gta2, "", "    ")
+    fmt.Println(string(jsonString2))
 }
 
 
