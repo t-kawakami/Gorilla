@@ -24,12 +24,12 @@ func main() {
     jsonString, _ := json.MarshalIndent(gta, "", "    ")
     fmt.Println(string(jsonString))
 
-    gta2 := json.Unmarshal([]byte(jsonString), Goritia{})
-//    var gta2p *Goritia = &gta2;
-//    gta2p.Id = "newTest"
-//    gta2p.Turn = 2
-//    gta2p.Hand[3] = 6
-    jsonString2, _ := json.MarshalIndent(gta2, "", "    ")
+    var gt Goritia
+    json.Unmarshal([]byte(jsonString), &gt)
+    gt.Id = "newTest"
+    gt.Turn = 2
+    gt.Hand[3] = 6
+    jsonString2, _ := json.MarshalIndent(gt, "", "    ")
     fmt.Println(string(jsonString2))
 }
 
