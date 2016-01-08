@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b69e6761-2cc1-46f0-82f3-a0f5fdeb8ef3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/gorilla.go" afterPath="$PROJECT_DIR$/script/gorilla.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b69e6761-2cc1-46f0-82f3-a0f5fdeb8ef3" name="Default" comment="" />
     <ignored path="Gorilla.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,12 +21,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gorilla.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gorilla.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/gorilla.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33626375">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state vertical-scroll-proportion="-43.633335">
+              <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fizzbuzz.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/script/fizzbuzz.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49227798">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#13#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,6 +76,7 @@
         <option value="$PROJECT_DIR$/main/gorilla.go" />
         <option value="$PROJECT_DIR$/script/example.go" />
         <option value="$PROJECT_DIR$/script/gorilla.go" />
+        <option value="$PROJECT_DIR$/script/fizzbuzz.go" />
       </list>
     </option>
   </component>
@@ -169,7 +179,7 @@
       <recent name="C:\AcroWorks\git-public\Gorilla\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Single File.go run gorilla.go (1)">
+  <component name="RunManager" selected="Go Single File.go run fizzbuzz.go">
     <configuration default="false" name="go run helloworld.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="Gorilla" />
       <working_directory value="C:\AcroWorks\git-public\Gorilla" />
@@ -192,6 +202,12 @@
       <module name="Gorilla" />
       <working_directory value="C:\AcroWorks\git-public\Gorilla" />
       <filePath value="$PROJECT_DIR$/script/example.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run fizzbuzz.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="Gorilla" />
+      <working_directory value="C:\AcroWorks\git-public\Gorilla" />
+      <filePath value="$PROJECT_DIR$/script/fizzbuzz.go" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -409,18 +425,20 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Go Single File.go run helloworld.go" />
       <item index="1" class="java.lang.String" itemvalue="Go Single File.go run gorilla.go" />
       <item index="2" class="java.lang.String" itemvalue="Go Single File.go run gorilla.go (1)" />
       <item index="3" class="java.lang.String" itemvalue="Go Single File.go run example.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run fizzbuzz.go" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run gorilla.go (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run example.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run gorilla.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run helloworld.go" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run fizzbuzz.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run gorilla.go (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run example.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run gorilla.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run helloworld.go" />
       </list>
     </recent_temporary>
   </component>
@@ -444,7 +462,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1616" height="1216" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -455,7 +473,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5222222" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49166667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15141752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -559,9 +577,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script/gorilla.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33626375">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state vertical-scroll-proportion="-43.633335">
+          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/fizzbuzz.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49227798">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#13#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
