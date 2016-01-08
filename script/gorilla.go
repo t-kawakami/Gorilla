@@ -15,15 +15,18 @@ type Goritia struct {
 }
 
 func main() {
+    fmt.Println("########## Gorilla ##########")
     fileName := "data\\gorilla.txt"
     deleteFile(fileName)
     gorilla(fileName)
-    readFile(fileName)
+    fmt.Println(readFile(fileName))
 
+    fmt.Println("########## json1 ##########")
     gta := Goritia{Id:"test", Turn:1, Hand:[]int{1, 2, 3, 4, 5}}
     jsonString, _ := json.MarshalIndent(gta, "", "    ")
     fmt.Println(string(jsonString))
 
+    fmt.Println("########## json2 ##########")
     var gt Goritia
     json.Unmarshal([]byte(jsonString), &gt)
     gt.Id = "newTest"
@@ -31,6 +34,21 @@ func main() {
     gt.Hand[3] = 6
     jsonString2, _ := json.MarshalIndent(gt, "", "    ")
     fmt.Println(string(jsonString2))
+
+    newFile := "data\\newFile.txt"
+    fmt.Println("########## create1 ##########")
+    writeFile(string(jsonString2), newFile, os.O_CREATE)
+    fmt.Println(readFile(newFile))
+    fmt.Println("########## append1 ##########")
+    writeFile(string(jsonString2), newFile, os.O_APPEND)
+    fmt.Println(readFile(newFile))
+    fmt.Println("########## append2 ##########")
+    writeFile(string(jsonString2), newFile, os.O_APPEND)
+    fmt.Println(readFile(newFile))
+    fmt.Println("########## create2 ##########")
+    writeFile(string(jsonString2), newFile, os.O_CREATE)
+    fmt.Println(readFile(newFile))
+    fmt.Println("########## end ##########")
 }
 
 
@@ -47,12 +65,17 @@ func writeFileAppend(text string, fileName string) {
     writer.Flush()
 }
 
-func readFile(fileName string) {
-    contents,err := ioutil.ReadFile(fileName)
-    if err != nil {
-        panic(err)
+func writeFile(text string, fileName string, flag int) {
+    if flag == os.O_APPEND {
+        writeFileAppend(text, fileName)
+    } else {
+        ioutil.WriteFile(fileName, []byte(text), os.ModePerm)
     }
-    fmt.Println(string(contents))
+}
+
+func readFile(fileName string) string {
+    contents,_ := ioutil.ReadFile(fileName)
+    return string(contents)
 }
 
 func gorilla(fileName string) {
