@@ -4,6 +4,7 @@ import "fmt"
 func main() {
 	sampleArray()
 	sampleSlice()
+	sampleMap()
 }
 
 func sampleArray() {
@@ -109,9 +110,31 @@ func sampleSlice() {
 	slice4[6] = 1
 	fmt.Println(slice3)
 	fmt.Println(slice4)
-
 }
 
 func sampleMap() {
+	fmt.Println("######")
+	var map1 = make(map[string]string)
+	map1["1"] = "test"
+	map1["2"] = "sample"
+	fmt.Println(map1)
+	delete(map1, "1")
+	fmt.Println(map1)
 
+	value, isok := map1["1"]
+	fmt.Println(value, isok)
+
+	value2, isok2 := map1["2"]
+	fmt.Println(value2, isok2)
+
+	fmt.Println("######")
+	// mapもポインタ渡し
+	map2 := map1
+	map2["1"] = "test2"
+	map2["2"] = "sample2"
+	fmt.Println(map1)
+	fmt.Println(map2)
+	map1["3"] = "test3"
+	fmt.Println(map1)
+	fmt.Println(map2)
 }
