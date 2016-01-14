@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/script/collection.go" line="10" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b69e6761-2cc1-46f0-82f3-a0f5fdeb8ef3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script/practice.go" />
-      <change type="DELETED" beforePath="C:\AcroWorks\git-public\Gorilla\script\gorilla.go" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b69e6761-2cc1-46f0-82f3-a0f5fdeb8ef3" name="Default" comment="" />
     <ignored path="Gorilla.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,13 +24,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="practice.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="practice.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/practice.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2937595">
+            <state vertical-scroll-proportion="-28.333334">
               <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
               <folding>
                 <element signature="e#14#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="waitPractice.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/script/waitPractice.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.58196723">
+              <caret line="115" column="37" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
+              <folding>
+                <element signature="e#13#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,6 +159,7 @@
         <option value="$PROJECT_DIR$/script/filePractice.go" />
         <option value="$PROJECT_DIR$/script/util/fileUtil.go" />
         <option value="$PROJECT_DIR$/script/practice.go" />
+        <option value="$PROJECT_DIR$/script/waitPractice.go" />
       </list>
     </option>
   </component>
@@ -253,14 +262,7 @@
       <recent name="C:\AcroWorks\git-public\Gorilla\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Single File.go run practice.go">
-    <configuration default="false" name="Build collection.go and run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="Gorilla" />
-      <working_directory value="C:\AcroWorks\git-public\Gorilla" />
-      <filePath value="$PROJECT_DIR$/script/collection.go" />
-      <kind value="FILE" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Go Single File.go run waitPractice.go">
     <configuration default="false" name="go run helloworld.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="Gorilla" />
       <working_directory value="C:\AcroWorks\git-public\Gorilla" />
@@ -283,6 +285,12 @@
       <module name="Gorilla" />
       <working_directory value="C:\AcroWorks\git-public\Gorilla" />
       <filePath value="$PROJECT_DIR$/script/practice.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run waitPractice.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="Gorilla" />
+      <working_directory value="C:\AcroWorks\git-public\Gorilla" />
+      <filePath value="$PROJECT_DIR$/script/waitPractice.go" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -501,19 +509,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Application.Build collection.go and run" />
-      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run helloworld.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run helloworld2.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run helloworld3.go" />
-      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run practice.go" />
+      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run helloworld.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run helloworld2.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run helloworld3.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run practice.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run waitPractice.go" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run practice.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run helloworld3.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run helloworld2.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run helloworld.go" />
-        <item index="4" class="java.lang.String" itemvalue="Go Application.Build collection.go and run" />
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run waitPractice.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run practice.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run helloworld3.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run helloworld2.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run helloworld.go" />
       </list>
     </recent_temporary>
   </component>
@@ -537,7 +545,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1616" height="1216" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -548,10 +556,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3351852" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2935185" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15657216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15657216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -822,10 +830,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script/practice.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2937595">
+        <state vertical-scroll-proportion="-28.333334">
           <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
           <folding>
             <element signature="e#14#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/waitPractice.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58196723">
+          <caret line="115" column="37" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
+          <folding>
+            <element signature="e#13#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
