@@ -8,12 +8,6 @@ import (
     "./util"
 )
 
-type Goritia struct {
-    Id string `json:"id"`
-    Turn int `json:"turn"`
-    Hand []int `json:"hand"`
-}
-
 func main() {
     fmt.Println("########## Gorilla ##########")
     fileName := "data\\gorilla.txt"
@@ -22,12 +16,12 @@ func main() {
     fmt.Println(util.ReadFile(fileName))
 
     fmt.Println("########## json1 ##########")
-    gta := Goritia{Id:"test", Turn:1, Hand:[]int{1, 2, 3, 4, 5}}
+    gta := gorilla.Goritia{Id:"test", Turn:1, Hand:[]int{1, 2, 3, 4, 5}}
     jsonString, _ := json.MarshalIndent(gta, "", "    ")
     fmt.Println(string(jsonString))
 
     fmt.Println("########## json2 ##########")
-    var gt Goritia
+    var gt gorilla.Goritia
     json.Unmarshal([]byte(jsonString), &gt)
     gt.Id = "newTest"
     gt.Turn = 2
