@@ -5,30 +5,35 @@ import (
 	"time"
 )
 
-type jsonTime struct {
+type JsonTime struct {
 	time.Time
 }
 
-// formatを指定する。2006-01-02や2006-01-02 03:04:05など。
-func (jsonTime jsonTime) format() string {
+func (jsonTime JsonTime) format() string {
 	return jsonTime.Time.Format("2006-01-02")
 }
 
-func (jsonTime jsonTime) MarshalJSON() ([]byte, error) {
+func (jsonTime JsonTime) MarshalJSON() ([]byte, error) {
 	return []byte(`"` + jsonTime.format() + `"`), nil
 }
-
 
 type Gorilla struct {
 	Name string `json:"name"`
 	Age int `json:age`
 	Children[] Gorilla `json:children`
-	BirthDay jsonTime `json:birthday`
+	BirthDay JsonTime `json:birthday`
 }
 
 func main() {
 	loc, _ := time.LoadLocation("Asia/Tokyo")
-	gorilla := Gorilla{Name:"Boss", Age:16, Children:[]Gorilla{}, BirthDay:jsonTime{time.Date(2015,1,18,0,0,0,0,loc)}}
+	var children []Gorilla
+	children = append(children, Gorilla{Name:"Nobita", Age:6, Children:[]Gorilla{}, BirthDay:JsonTime{time.Date(2009,1,1,0,0,0,0,loc)}})
+	children = append(children, Gorilla{Name:"Suneo", Age:6, Children:[]Gorilla{}, BirthDay:JsonTime{time.Date(2009,1,1,0,0,0,0,loc)}})
+	children = append(children, Gorilla{Name:"Jaian", Age:6, Children:[]Gorilla{}, BirthDay:JsonTime{time.Date(2009,1,1,0,0,0,0,loc)}})
+	children = append(children, Gorilla{Name:"Shizuka", Age:6, Children:[]Gorilla{}, BirthDay:JsonTime{time.Date(2009,1,1,0,0,0,0,loc)}})
+	children = append(children, Gorilla{Name:"Shusaku", Age:6, Children:[]Gorilla{}, BirthDay:JsonTime{time.Date(2009,1,1,0,0,0,0,loc)}})
+
+	gorilla := Gorilla{Name:"Boss", Age:16, Children:children, BirthDay:JsonTime{time.Date(1999,1,18,0,0,0,0, loc)}}
 	jsonString, _ := json.MarshalIndent(gorilla, " ", "    ")
 	fmt.Printf(string(jsonString))
 }
