@@ -9,17 +9,19 @@ import (
 )
 
 func main() {
-	goritia := gorilla.Goritia{Id:"test", Turn:1, Hand:[]int{1, 2, 3, 4, 5}}
-	jsonStr,_ := json.Marshal(goritia)
-	fmt.Println(string(jsonStr))
+	unMarshalTest()
+	fmt.Println("#####")
+	unMarshalGorilla()
+}
 
+func unMarshalTest() {
 	var newGoritia gorilla.Goritia
-	json.Unmarshal(jsonStr, &newGoritia)
+	json.Unmarshal([]byte(`{"id":"test","turn":1,"hand":[1,2,3,4,5]}`), &newGoritia)
 	jsonNewStr,_ := json.Marshal(newGoritia)
 	fmt.Println(string(jsonNewStr))
 
-	for hand := range newGoritia.Hand {
-		fmt.Println(string(hand))
+	for index, hand := range newGoritia.Hand {
+		fmt.Printf("%d:%d\r\n", index, hand)
 	}
 }
 
@@ -32,7 +34,7 @@ func unMarshalGorilla() {
 	parentStr,_ := json.MarshalIndent(gorilla, " ", "    ")
 	fmt.Println(string(parentStr))
 
-	for child := range gorilla.Children {
+	for _, child := range gorilla.Children {
 		childStr,_ := json.MarshalIndent(child, " ", "    ")
 		fmt.Println(string(childStr))
 	}
