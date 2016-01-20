@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"./gorilla"
+	"time"
 )
 
 func main() {
@@ -15,6 +16,16 @@ func main() {
 	unMarshalGorilla()
 	fmt.Println("#####")
 	unMarshalGorilla2()
+	fmt.Println("#####")
+	unMarshalChimpanzee()
+	fmt.Println("#####")
+	unMarshalChimpanzee2()
+	fmt.Println("#####")
+	unMarshalTime(`{"name":"Boss","age":16,"birthDay":"2000-01-08T09:00:00Z"}`)
+	unMarshalTime(`{"name":"Boss","age":16,"birthDay":"2000-01-08"}`)
+	fmt.Println("#####")
+	unMarshalTime2(`{"name":"Boss","age":16,"birthDay":"2000-01-08T09:00:00Z"}`)
+	unMarshalTime2(`{"name":"Boss","age":16,"birthDay":"2000-01-08"}`)
 }
 
 // int型の配列は展開できた
@@ -51,6 +62,7 @@ func unMarshalGorilla() {
 	}
 }
 
+// 子供がいない場合でも日付をうまくパースできていない
 func unMarshalGorilla2() {
 	var gorilla gorilla.Gorilla
 	json.Unmarshal([]byte(`{"name":"Boss","age":16,"children":[],"birthday":"1999-01-18"}`), &gorilla)
@@ -62,4 +74,52 @@ func unMarshalGorilla2() {
 		childStr,_ := json.MarshalIndent(child, "", "    ")
 		fmt.Println(string(childStr))
 	}
+}
+
+// 親と子の型が違う場合はいける？
+func unMarshalChimpanzee() {
+	type ChimpanzeeChild struct {
+		Name string `json:"name"`
+		Age int `json:"age"`
+	}
+	type Chimpanzee struct {
+		Name string `json:"name"`
+		Age int `json:"age"`
+		Children []ChimpanzeeChild `json:"children"`
+	}
+	var chimpanzee Chimpanzee
+	json.Unmarshal([]byte(`{"name":"Boss","age":16,"children":[{"name":"Mary","age":8},{"name":"John","age":4}]}`), &chimpanzee)
+
+	chimpanzeeStr, _ := json.MarshalIndent(chimpanzee, "", "    ")
+	fmt.Println(string(chimpanzeeStr))
+}
+
+// 親と子の型が同じで日付けを含まない場合
+func unMarshalChimpanzee2() {
+	type Chimpanzee struct {
+		Name string `json:"name"`
+		Age int `json:"age"`
+		Children []Chimpanzee `json:"children"`
+	}
+	var chimpanzee Chimpanzee
+	json.Unmarshal([]byte(`{"name":"Boss","age":16,"children":[{"name":"Mary","age":8,"children":[]},{"name":"John","age":4,"children":[]}]}`), &chimpanzee)
+
+	chimpanzeeStr, _ := json.MarshalIndent(chimpanzee, "", "    ")
+	fmt.Println(string(chimpanzeeStr))
+	// うまくいった。Gorillaでうまくいかなかったのは日付けのパースで失敗したことが契機？
+}
+
+func unMarshalTime(jsonStr string) {
+	type Chimpanzee struct {
+		Name string `json:"name"`
+		Age int `json:"age"`
+		BirthDay time.Time `json:birthDay`
+	}
+
+	var chimpanzee Chimpanzee
+	json.Unmarshal([]byte(jsonStr), &chimpanzee)
+
+	fmt.Println(chimpanzee.BirthDay.Format("2006-01-02 03:04:05"))
+	chimpanzeeStr, _ := json.MarshalIndent(chimpanzee, "", "    ")
+	fmt.Println(string(chimpanzeeStr))
 }
