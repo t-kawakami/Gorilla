@@ -23,9 +23,6 @@ func main() {
 	fmt.Println("#####")
 	unMarshalTime(`{"name":"Boss","age":16,"birthDay":"2000-01-08T09:00:00Z"}`)
 	unMarshalTime(`{"name":"Boss","age":16,"birthDay":"2000-01-08"}`)
-	fmt.Println("#####")
-	unMarshalTime2(`{"name":"Boss","age":16,"birthDay":"2000-01-08T09:00:00Z"}`)
-	unMarshalTime2(`{"name":"Boss","age":16,"birthDay":"2000-01-08"}`)
 }
 
 // int型の配列は展開できた
